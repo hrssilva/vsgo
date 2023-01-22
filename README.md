@@ -1,2 +1,2 @@
-# wvsgo
-A Windows CLI utility for moving to a vscode workspace folder
+# vsgo
+A CLI utility for moving to a vscode workspace folder
