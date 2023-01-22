@@ -16,9 +16,9 @@ def get_workspaces():
                 data = json.load(f)
                 try:
                     workspace_uri = data['folder']
+                    workspaces.append(unquote(urlparse(workspace_uri).path)[1:])
                 except:
                     pass
-                workspaces.append(unquote(urlparse(workspace_uri).path)[1:])
     return workspaces
 
 if __name__=='__main__':
